@@ -7,6 +7,7 @@ void setup() {
 }
 void loop() {
     long total1 =  cs_4_2.capacitiveSensor(30);
+    //value greater than 100 suggests hand is close to sensor
     if (total1 > 100) {
       Serial.print(total1);
       Serial.print("\n");
